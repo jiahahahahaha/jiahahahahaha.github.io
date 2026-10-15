@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Jiahao LastName — Personal Homepage</title>
+<meta name="description" content="Personal homepage of Jiahao LastName: web security measurement, password creation policies, automated page understanding." />
+
+<!-- ============================================================
+     TODO 占位内容清单（搜索这些标记逐条替换即可）：
+       [NAME]        姓名（英文，与论文署名一致）
+       [NAME-CN]     中文名（不需要可整行删除）
+       [AFFIL]       单位 / 院系
+       [TAGLINE]     一句话研究方向
+       [BIO]         自我介绍段落
+       [EMAIL]       邮箱（建议与 OpenReview 用同一个机构邮箱）
+       [SCHOLAR]     Google Scholar 主页链接
+       [ORCID]       ORCID 链接
+       [DBLP]        DBLP 作者页链接
+       [GITHUB]      GitHub 链接（默认已填你的账号）
+       [OPENREVIEW]  OpenReview profile 链接（注册后回来填）
+       [PUB-*]       论文条目
+     ============================================================ -->
+
+<style>
+  :root{
+    --bg:#ffffff; --fg:#16181d; --muted:#646b76; --line:#e6e8ec;
+    --accent:#1f4e9c; --chip:#f4f5f7; --max:840px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0f1115; --fg:#e7e9ec; --muted:#98a1ad; --line:#262a33;
+      --accent:#8ab0f7; --chip:#191d25;
+    }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--fg);
+    font:16px/1.72 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+         "Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  }
+  .wrap{max-width:var(--max); margin:0 auto; padding:64px 24px 88px}
+  a{color:var(--accent); text-decoration:none}
+  a:hover{text-decoration:underline}
+
+  header{margin-bottom:36px}
+  h1{font-size:1.95rem; line-height:1.25; margin:0 0 4px; letter-spacing:-.015em}
+  .name-cn{font-size:1rem; color:var(--muted); font-weight:400; margin-left:10px}
+  .tagline{color:var(--muted); margin:8px 0 0}
+  .affil{margin:4px 0 0; font-size:.95rem}
+
+  .links{display:flex; flex-wrap:wrap; gap:8px; margin-top:18px}
+  .links a{
+    display:inline-block; padding:5px 12px; border:1px solid var(--line);
+    border-radius:999px; background:var(--chip); font-size:.86rem; color:var(--fg);
+  }
+  .links a:hover{border-color:var(--accent); color:var(--accent); text-decoration:none}
+
+  h2{
+    font-size:.82rem; text-transform:uppercase; letter-spacing:.09em;
+    color:var(--muted); font-weight:600;
+    margin:44px 0 14px; padding-bottom:8px; border-bottom:1px solid var(--line);
+  }
+  p{margin:0 0 12px}
+  ul.plain{margin:0; padding-left:20px}
+  ul.plain li{margin-bottom:6px}
+
+  .pub{margin-bottom:20px}
+  .pub .t{font-weight:600}
+  .pub .a{font-size:.93rem; color:var(--muted); margin:2px 0}
+  .pub .v{font-size:.93rem; font-style:italic}
+  .pub .x{font-size:.85rem; margin-top:4px; display:flex; gap:14px; flex-wrap:wrap}
+
+  .item{margin-bottom:18px}
+  .item .t{font-weight:600}
+  .item .d{font-size:.94rem; color:var(--muted); margin:2px 0 0}
+
+  footer{margin-top:56px; padding-top:20px; border-top:1px solid var(--line);
+         font-size:.85rem; color:var(--muted)}
+</style>
+</head>
+
+<body>
+<main class="wrap">
+
+  <header>
+    <h1>Jiahao LastName<span class="name-cn">张甲豪</span></h1>
+    <p class="tagline">[TAGLINE] &nbsp;·&nbsp; Web Security Measurement &amp; Password Policies</p>
+    <p class="affil">[AFFIL]<br>School of Computer Science, Example University</p>
+
+    <nav class="links">
+      <a href="mailto:first.author@example.edu">Email</a>
+      <a href="[SCHOLAR]">Google Scholar</a>
+      <a href="[ORCID]">ORCID</a>
+      <a href="[DBLP]">DBLP</a>
+      <a href="https://github.com/jiahahahahaha">GitHub</a>
+      <a href="[OPENREVIEW]">OpenReview</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>About</h2>
+    <p>
+      I am a researcher working on <strong>web security measurement</strong>, with a focus on
+      how real-world websites enforce <strong>password creation policies</strong>.
+      My work builds automated pipelines that discover account registration pages and
+      extract deployed policy constraints at scale, and studies how those policies vary
+      with site popularity.
+    </p>
+    <p>[BIO]</p>
+  </section>
+
+  <section>
+    <h2>Research Interests</h2>
+    <ul class="plain">
+      <li>Password creation policies: minimum/maximum length, required character classes, forbidden inputs</li>
+      <li>Large-scale web measurement and automated page understanding</li>
+      <li>Multi-channel evidence extraction for deployed security configurations</li>
+      <li>LLM-assisted data extraction with deterministic verification</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Publications</h2>
+
+    <!-- [PUB-1] 这是你正在投的那篇；venue 待定 -->
+    <article class="pub">
+      <div class="t">Measuring Password Creation Policies at Million-Site Scale:
+        Discovery, Multi-Channel Extraction, and the Rank Gradient</div>
+      <div class="a">[NAME], Second Author, Third Author</div>
+      <div class="v">[Under review]</div>
+      <div class="x"><a href="#">PDF</a><a href="#">Code</a><a href="#">DOI</a></div>
+    </article>
+
+    <!-- [PUB-2] 有别的论文就复制这个 article 块，没有就删掉 -->
+    <article class="pub">
+      <div class="t">Paper Title Placeholder</div>
+      <div class="a">[NAME], Coauthor A, Coauthor B</div>
+      <div class="v">Venue Name, 20XX</div>
+      <div class="x"><a href="#">PDF</a><a href="#">DOI</a></div>
+    </article>
+  </section>
+
+  <section>
+    <h2>Selected Projects</h2>
+
+    <div class="item">
+      <div class="t">page-classifier — registration page discovery &amp; password rule extraction</div>
+      <div class="d">
+        An automated pipeline that, given a list of target websites, locates the login/registration
+        page and extracts the deployed password policy (length bounds, required character classes,
+        forbidden inputs) using HTML attributes, focus-overlay scanning, progressive input probing,
+        JavaScript source analysis and VLM-assisted recognition.
+      </div>
+      <div class="d"><a href="https://github.com/jiahahahahaha">github.com/jiahahahahaha</a></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:first.author@example.edu">first.author@example.edu</a></p>
+  </section>
+
+  <footer>
+    Last updated: <span id="updated">2026-10-15</span> · Hosted on GitHub Pages
+  </footer>
+
+</main>
+</body>
+</html>
