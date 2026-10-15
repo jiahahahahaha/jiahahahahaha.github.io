@@ -7,15 +7,19 @@
 <meta name="description" content="Longjie Jia (贾龙杰), College of Computer Science and Technology, National University of Defense Technology (NUDT). Web security measurement and password creation policies." />
 
 <!-- ============================================================
-     还需你补充的占位内容（搜索这些标记逐条替换）：
-       [COAUTHORS]   论文合作者姓名（按论文署名顺序）
-       [VENUE]       论文会议/期刊或投稿状态，例如 "Under review" / "IMC 2027"
-       [PDF]/[Code]/[DOI]  论文资源链接，没有的整条 <a> 删掉
-       [BIO]         可选：2-3 句自我介绍，插在 About 段落后面
+     index.html — personal homepage of Longjie Jia (贾龙杰)
+     Single file, no external dependencies. Edit, commit, push.
+
      已就绪（无需改动）：
-       姓名 Longjie Jia / 贾龙杰，单位 NUDT CCS，邮箱 jialongjie@nudt.edu.cn
-     待你拿到后启用（现在是注释掉的，去掉 <!-- 和 --> 即可）：
-       Google Scholar / ORCID / DBLP / OpenReview 四个链接
+       姓名   Longjie Jia / 贾龙杰
+       单位   College of Computer Science and Technology, NUDT
+       邮箱   jialongjie@nudt.edu.cn
+
+     待补充：
+       1. Google Scholar / ORCID / DBLP / OpenReview 四个按钮目前为
+          注释状态，拿到链接后在 nav 区块取消注释并填入 URL。
+       2. 如需恢复 Publications 板块，取消下方 section 注释即可。
+     注意：本文件内的 HTML 注释不要互相嵌套。
      ============================================================ -->
 
 <style>
@@ -62,6 +66,7 @@
   ul.plain{margin:0; padding-left:20px}
   ul.plain li{margin-bottom:6px}
 
+  /* 供 Publications 板块使用；当前无该板块，保留以便随时恢复 */
   .pub{margin-bottom:20px}
   .pub .t{font-weight:600}
   .pub .a{font-size:.93rem; color:var(--muted); margin:2px 0}
@@ -90,7 +95,7 @@
 
     <nav class="links">
       <a href="mailto:jialongjie@nudt.edu.cn">Email</a>
-      <!-- 拿到链接后，把下面几行的注释去掉并替换 URL；没有的整行删掉 -->
+      <!-- 拿到链接后取消下面四行注释并替换 URL；没有的整行删掉 -->
       <!-- <a href="[SCHOLAR]">Google Scholar</a> -->
       <!-- <a href="[ORCID]">ORCID</a> -->
       <!-- <a href="[DBLP]">DBLP</a> -->
@@ -111,7 +116,7 @@
       I am with the College of Computer Science and Technology, National University of Defense
       Technology (NUDT), Changsha, China.
     </p>
-    <!-- [BIO] 可选：再加一段自我介绍写在这里 -->
+    <!-- 可选：再加一段自我介绍写在这里 -->
   </section>
 
   <section>
@@ -124,24 +129,18 @@
     </ul>
   </section>
 
-  <section>
-    <h2>Publications</h2>
-
-    <article class="pub">
-      <div class="t">Measuring Password Creation Policies at Million-Site Scale:
-        Discovery, Multi-Channel Extraction, and the Rank Gradient</div>
-      <div class="a">Longjie Jia, [COAUTHORS]</div>
-      <div class="v">[VENUE]</div>
-      <div class="x">
-        <!-- 没有的资源链接整条删掉 -->
-        <a href="#">PDF</a>
-        <a href="#">Code</a>
-        <a href="#">DOI</a>
-      </div>
-    </article>
-
-    <!-- 有其他论文时，复制上面整个 <article class="pub"> ... </article> 块即可 -->
-  </section>
+  <!--
+    Publications 板块模板（需要时取消注释使用）：
+    <section>
+      <h2>Publications</h2>
+      <article class="pub">
+        <div class="t">Paper Title</div>
+        <div class="a">Longjie Jia, Coauthor A, Coauthor B</div>
+        <div class="v">Venue Name, 20XX</div>
+        <div class="x"><a href="#">PDF</a><a href="#">DOI</a></div>
+      </article>
+    </section>
+  -->
 
   <section>
     <h2>Selected Projects</h2>
