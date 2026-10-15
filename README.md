@@ -6,18 +6,30 @@
 
 ## 1. 改内容
 
-只需编辑 `index.html`，搜索并替换这些占位标记：
+只需编辑 `index.html`。已填好的信息（无需改动）：
+
+- 姓名：Longjie Jia / 贾龙杰
+- 单位：College of Computer Science and Technology, National University of Defense Technology (NUDT), Changsha, China
+- 邮箱：jialongjie@nudt.edu.cn
+
+还需要你补的占位标记：
 
 | 标记 | 换成 |
 |---|---|
-| `[NAME]` | 你的英文姓名（**必须与论文署名完全一致**） |
-| `张甲豪` | 中文名（不需要就删掉整个 `<span class="name-cn">`） |
-| `[TAGLINE]` | 一句话研究方向 |
-| `[AFFIL]` | 单位 / 院系 |
-| `[BIO]` | 自我介绍段落（不需要就删掉那行 `<p>[BIO]</p>`） |
-| `[EMAIL]` / `first.author@example.edu` | 你的邮箱（建议与 OpenReview 用同一个） |
-| `[SCHOLAR]` `[ORCID]` `[DBLP]` `[OPENREVIEW]` | 对应链接；没有的项把整个 `<a>` 删掉 |
-| `[PUB-1]` `[PUB-2]` | 论文条目；多余的 `<article class="pub">` 块删掉 |
+| `[COAUTHORS]` | 论文合作者，按署名顺序，例如 `Jane Doe, Wei Wang` |
+| `[VENUE]` | 会议/期刊或状态，例如 `Under review`、`IMC 2027` |
+| `PDF` / `Code` / `DOI` 三条链接 | 真实链接；没有的整条 `<a>` 删掉 |
+
+> **姓名必须与论文署名完全一致**（英文名顺序按你论文里的写法；若论文用 `Jia, Longjie`，就把 `Longjie Jia` 改成对应写法）。
+
+另外 HTML 里有三处被注释掉、等你拿到链接后启用的按钮，把 `<!--` 和 `-->` 去掉再填 URL 即可：
+
+```html
+<!-- <a href="[SCHOLAR]">Google Scholar</a> -->
+<!-- <a href="[ORCID]">ORCID</a> -->
+<!-- <a href="[DBLP]">DBLP</a> -->
+<!-- <a href="[OPENREVIEW]">OpenReview</a> -->
+```
 
 本地预览：直接双击 `index.html` 用浏览器打开即可。
 
